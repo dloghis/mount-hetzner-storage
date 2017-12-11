@@ -1,12 +1,9 @@
 # mount-hetzner-storage
 How to mount Hetzner storage box
-
-EN - English
----------------------------------------------------------------------------
-Install dependencies Command line
 ---------------------------------------------------------------------------
 
-Install sshfs
+
+Install sshfs and dependencies Command line
 ------------------
 
     yum install sshfs fuse-sshfs
