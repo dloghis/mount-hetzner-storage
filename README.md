@@ -40,7 +40,7 @@ How to mount Hetzner storage box Automatically on boot with fstab
 Mounting automatically with fstab is pointless because storage box in Hetzner is unmounted every 5 min of inactivity.
 However you can run mount -a every 3-5 min
 
-   nano /etc/fstab
+    nano /etc/fstab
 
 place in to your fstab file at the bottom:
 
@@ -51,3 +51,6 @@ Test it manually
     mount -a
     df -hT
   
+Done!
+
+12 Dec 2017
