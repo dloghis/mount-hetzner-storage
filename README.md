@@ -13,7 +13,7 @@ Install sshfs and dependencies Command line
 Mount storage box
 ------------------
     
-    sshfs STORAGE-USER@STORAGE-USER.your-storagebox.de:/  /backup
+    sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/  /backup
     
 
 # Automatically mount-hetzner-storage
@@ -31,6 +31,12 @@ Install sshpass and mount storage disk command line
 
 place in to your fstab file at the bottom:
 
-    sshfs#STORAGE-USER@STORAGE-USER.your-storagebox.de:/  /backup   fuse   auto,ssh_command=sshpass\040-f\040/root/.ssh/host.password\040ssh  0  0
+    sshfs#YOUR-USER@YOUR-USER.your-storagebox.de:/  /backup   fuse   auto,ssh_command=sshpass\040-f\040/root/.ssh/host.password\040ssh  0  0
 
+Run the command
+
+    mount -a
     
+or run the script
+
+    ./backup-mount.sh
