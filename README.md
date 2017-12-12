@@ -19,3 +19,12 @@ Mount storage box
 # Automatically mount-hetzner-storage
 How to mount Hetzner storage box Automatically
 ---------------------------------------------------------------------------
+To automaticaly mount storage disk we are using sshpass
+
+Install sshpass command line
+------------------
+    yum install sshpass 
+
+    echo 'YOUR-PASSWORD' > /root/.ssh/host.password
+
+
