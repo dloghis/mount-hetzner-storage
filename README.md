@@ -30,4 +30,7 @@ Install sshpass and mount storage disk command line
     nano /etc/fstab
 
 place in to your fstab file at the botom:
+
     sshfs#STORAGE-USER@STORAGE-USER.your-storagebox.de:/  /backup   fuse   auto,ssh_command=sshpass\040-f\040/root/.ssh/host.password\040ssh  0  0
+
+    
