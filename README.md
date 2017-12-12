@@ -19,7 +19,7 @@ Mount storage box
 # Automatically mount-hetzner-storage
 How to mount Hetzner storage box Automatically
 ---------------------------------------------------------------------------
-To automaticaly mount storage disk we are using sshpass
+To automatically mount storage disk we are using sshpass
 
 Install sshpass and mount storage disk command line
 ------------------
@@ -29,7 +29,7 @@ Install sshpass and mount storage disk command line
     
     nano /etc/fstab
 
-place in to your fstab file at the botom:
+place in to your fstab file at the bottom:
 
     sshfs#STORAGE-USER@STORAGE-USER.your-storagebox.de:/  /backup   fuse   auto,ssh_command=sshpass\040-f\040/root/.ssh/host.password\040ssh  0  0
 
