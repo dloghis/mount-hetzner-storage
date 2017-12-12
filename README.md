@@ -15,3 +15,7 @@ Mount storage box
     
     sshfs STORAGE-USER@STORAGE-USER.your-storagebox.de:/  /backup
     
+
+# Automatically mount-hetzner-storage
+How to mount Hetzner storage box Automatically
+---------------------------------------------------------------------------
