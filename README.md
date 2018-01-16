@@ -12,7 +12,7 @@ Install sshfs command line
 
 Mount storage box
 ------------------------------------
-(this command will prompt for a password)
+(this command will prompt for a password, you need to do this for the first time)
   
     sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/  /backup
   
