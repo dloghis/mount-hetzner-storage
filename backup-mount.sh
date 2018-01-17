@@ -13,7 +13,7 @@ done
 # Check if storage is mounted (be sure that your user and password are ok)
 if [ $(mount | grep 'YOUR-USER.your-storagebox.de:/servers-backup' | wc -l) -ne 1 ]
 then
-    echo 'YOUR-PASSWORD' | sshfs YOUR-USER.your-storagebox.de:/  /backup -o password_stdin,allow_other
+    echo 'YOUR-PASSWORD' | sshfs YOUR-USER.your-storagebox.de:/YUOR-FOLDER  /backup -o password_stdin,allow_other
     echo 'SSHFS has been mounted.'
 else
     echo 'SSHFS is already mounted.'

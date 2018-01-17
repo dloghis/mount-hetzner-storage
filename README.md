@@ -14,7 +14,9 @@ Mount storage box
 ------------------------------------
 (this command will prompt for a password, you need to do this for the first time)
   
-    sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/  /backup
+    sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/YUOR-FOLDER  /backup
+(In one line)
+    echo 'YOUR-PASSWORD' | sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/YUOR-FOLDER  /backup -o password_stdin,allow_other
   
 Check that your storage is mounted with:
 
@@ -44,7 +46,7 @@ However you can run mount -a every 3-5 min
 
 place in to your fstab file at the bottom:
 
-    sshfs#YOUR-USER@YOUR-USER.your-storagebox.de:/  /backup   fuse   auto,ssh_command=sshpass\040-f\040/root/.ssh/host.password\040ssh  0  0
+    sshfs#YOUR-USER@YOUR-USER.your-storagebox.de:/YUOR-FOLDER  /backup   fuse   auto,ssh_command=sshpass\040-f\040/root/.ssh/host.password\040ssh  0  0
 
 Test it manually
 
