@@ -15,7 +15,9 @@ Mount storage box
 (this command will prompt for a password, you need to do this for the first time)
   
     sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/YUOR-FOLDER  /backup
+    
 (In one line)
+
     echo 'YOUR-PASSWORD' | sshfs YOUR-USER@YOUR-USER.your-storagebox.de:/YUOR-FOLDER  /backup -o password_stdin,allow_other
   
 Check that your storage is mounted with:
