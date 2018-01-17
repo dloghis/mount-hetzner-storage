@@ -22,13 +22,6 @@ Check that your storage is mounted with:
 
 How to mount Hetzner storage box Automatically
 ---------------------------------------------------------------------------
-To automatically mount storage disk we are using sshpass
-Install sshpass and mount storage disk command line
-
-    yum install sshpass
-
-    echo 'YOUR-PASSWORD' > /root/.ssh/host.password
-
 Edit the script and run it, (be sure that your user and password are ok)
 
     ./backup-mount.sh
@@ -37,6 +30,13 @@ Place your script in crontab and mount every 3-5 min
 
 How to mount Hetzner storage box Automatically on boot with fstab
 ---------------------------------------------------------------------------
+To automatically mount storage disk we are using sshpass
+Install sshpass and mount storage disk command line
+
+    yum install sshpass
+
+    echo 'YOUR-PASSWORD' > /root/.ssh/host.password
+    
 Mounting automatically with fstab is pointless because storage box in Hetzner is unmounted every 5 min of inactivity.
 However you can run mount -a every 3-5 min
 
