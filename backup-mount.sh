@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Check if your storage is mounted
 if [ $(mount | grep 'YOUR-USER@YOUR-USER.your-storagebox.de:/servers-backup' | wc -l) -ne 1 ]
 then
     echo 'YOUR-PASSWORD' | sshfs -o allow_other YOUR-USER@YOUR-USER.your-storagebox.de:/servers-backup /backup -o password_stdin,allow_other
